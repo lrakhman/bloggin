@@ -1,0 +1,14 @@
+<h1>All Your God-damned Posts</h1>
+
+<ul id="posts">
+  <% @posts.each do |post| %>
+    <li>
+      <%= link_to post.title, post_path(post), class: 'article_title', id: "post_#{post.id}" %>
+    </li>
+  <% end %>
+</ul>
+
+
+
+
+<%= link_to "Create a New Post, if you care", new_post_path, class: 'new_article' %>
