@@ -1,7 +1,11 @@
 <h2><%= @post.title %></h2>
 <p><%= @post.body %></p>
+<br>
 
-<%= link_to "delete", post_path(@post), method: :delete, data: {confirm: "Really delete the post? How sure are you?"} %>
+<%= link_to "Edit", edit_post_path(@post) %>
+
+<%= link_to "Delete", post_path(@post), method: :delete, data: {confirm: "Really delete the post? How sure are you?"} %>
+
 
 <br><br>
 
