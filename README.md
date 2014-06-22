@@ -1,0 +1,4 @@
+bloggin
+=======
+
+Practicing rails, bitches.
