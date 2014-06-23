@@ -7,8 +7,8 @@ class CommentsController < ApplicationController
 
 	  @comment.save
 
-	  redirect_to post_path(@comment.post)
-		end
+	  redirect_to post_path(@comment.post_id)
+	end
 
 
 end
